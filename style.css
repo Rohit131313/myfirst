@@ -29,7 +29,7 @@ body {margin:0;
     margin-right:1vw;
     margin-top:0.5vw;
 }
-.topnav a{
+.topnav .abc{
   float: left;
   display: block;
   color: #121111;

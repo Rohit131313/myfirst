@@ -309,25 +309,48 @@ w6.addEventListener('mouseover', function() {
 w6.addEventListener('mouseout', function() {
   w6.style.cssText += "background-color:#070ff0;color:white;font-weight:lighter";
 });
-
-// Wait for the page to load
+	
 window.addEventListener('load', function() {
-  // Set a timeout to show the popup after 10 seconds
-  
-    // Get the popup container
-    var popupContainer = document.getElementById('popup-container');
+  // Get the popup container and content elements
+  const popupContainer = document.getElementById('popup-container');
+  const popupContent = document.getElementById('popup-content');
+
+  // Get the close button element
+  const popupClose = document.getElementById('popup-close');
+
+  // Check if the popup container and content elements exist
+  if (popupContainer && popupContent) {
     // Show the popup container
     popupContainer.style.display = 'block';
-    // Close the popup when the close button is clicked
-    var popupCloseButton = document.getElementById('popup-close');
-    popupCloseButton.addEventListener('click', function(event) {
+
+    // Add a click event listener to the close button element
+    popupClose.addEventListener('click', function(event) {
+      event.preventDefault();
+      // Hide the popup container
       popupContainer.style.display = 'none';
     });
-  
+  }
 });
 
-var popupContainer = document.querySelector(".popup-container");
-var popupCloseButton = document.querySelector("#popup-close");
+
+// // Wait for the page to load
+// window.addEventListener('load', function() {
+//   // Set a timeout to show the popup after 10 seconds
+  
+//     // Get the popup container
+//     var popupContainer = document.getElementById('popup-container');
+//     // Show the popup container
+//     popupContainer.style.display = 'block';
+//     // Close the popup when the close button is clicked
+//     var popupCloseButton = document.getElementById('popup-close');
+//     popupCloseButton.addEventListener('click', function(event) {
+//       popupContainer.style.display = 'none';
+//     });
+  
+// });
+
+// var popupContainer = document.querySelector(".popup-container");
+// var popupCloseButton = document.querySelector("#popup-close");
 
 // if (popupContainer && popupCloseButton) {
 //   window.addEventListener("load", function() {

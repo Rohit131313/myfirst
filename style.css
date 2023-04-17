@@ -97,7 +97,7 @@ body {margin:0;
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -107,7 +107,7 @@ body {margin:0;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
